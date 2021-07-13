@@ -1,0 +1,167 @@
+
+*{
+    outline: 1px solid #000;
+}
+
+/* ---------------- */
+/* ---- HEADER ---- */
+/* ---------------- */
+
+header{
+    background-color: #4ABDF2;
+    background-image: url(../img/banner.png);
+    background-position: center 100%;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 30px 0;
+}
+
+.nav__brand{
+    width: 123px;
+    height: 24px;
+}
+
+.nav__brand a{
+    width: 100%;
+    height: 100%;
+}
+
+.nav__menu{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.toggler{
+    width: 25px;
+    height: 20px;
+    background: transparent;
+    background-image: url(../icons/burger.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* ---------------- */
+/* ---- BANNER ---- */
+/* ---------------- */
+
+.banner{
+    padding-top: 60px;
+    padding-bottom: 135px;
+}
+
+.vector{
+    width: 30px;
+    height: 85px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* ----------------- */
+/* ---- CONTENT ---- */
+/* ----------------- */
+
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block__img{
+    width: 100%;
+    height: 313px;
+    background-color: #F9D70C;
+    text-align: center;
+}
+
+.block__img img{
+    width: 375px;
+}
+
+.block:nth-child(2) .block__img{
+    background: linear-gradient(90deg, #ff8070f2, #ff5d4ff5);
+}
+
+.block__text{
+    width: 327px;
+    padding: 65px 0;
+    text-align: center;
+}
+
+.block__text p{
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.block__link{
+    display: inline-block;
+    font-family: var(--Fraunces);
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 25px;
+    color: var(--heading_color);
+    position: relative;
+}
+
+.block__link::before{
+    content: '';
+    width: calc(100% + 10px);
+    height: 50%;
+    background-color: #FEF2BA;
+    position: absolute;
+    border-radius: 20px;
+    bottom: 0;
+    left: -5px;
+    z-index: -1;
+}
+
+.block:nth-child(2) .block__link::before{
+    background-color: #FFDBD4;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    width: 100%;
+    padding-top: 400px;
+    padding-bottom: 60px;
+    background-image: url(../img/cherry.png);
+    background-position: center 0;
+    background-size: 48%;
+    background-repeat: no-repeat;
+}
+
+.apelsin{
+    background-image: url(../img/apelsin.png);
+}
+
+.wrap{
+    width: 327px;
+    margin: 0 auto;
+    text-align: center;
+    transform: translateY(10px);
+}
+
+.card h3{
+    margin-bottom: 30px;
+    color: #24554A;
+}
+
+.card p{
+    font-size: 1.6rem;
+    line-height: 27px;
+    color: #24554A;;
+}

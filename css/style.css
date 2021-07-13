@@ -1,0 +1,110 @@
+
+
+/* --------------- */
+/* ---- FONTS ---- */
+/* --------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@900&display=swap');
+
+/* --------------- */
+/* -- VARIABLES -- */
+/* --------------- */
+
+:root{
+    --bg_color: #FFFCF8;
+    --heading_color: #24303E;
+    --text_color: #808397;
+    --nav-link_color: #fff;
+    --content-color_green: #24554A;
+    --content-color_blue: #19536C;
+    --feedback-text_color: #5B636D;
+    --feedback-data_color: #A7AAAD;
+    --footer-link_color: #458D7E;
+    --Barlow: 'Barlow', 'Arial', sans-serif;
+    --Fraunces: 'Fraunces', 'Georgia', serif;
+}
+
+/* -------------- */
+/*  BASIC_SETUPS  */
+/* -------------- */
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--Barlow);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--text_color);
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: calc(327px + 30px);
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1,h2,h3{
+    font-family: var(--Fraunces);
+    font-weight: 900;
+    text-align: center;
+    color: var(--heading_color);
+    margin: 0;
+}
+
+h1{
+    font-size: 4rem;
+    line-height: 49px;
+    letter-spacing: 6px;
+    color: #fff;
+}
+
+h2{
+    font-size: 3.2rem;
+    line-height: 39px;
+}
+
+h3{
+    font-size: 2.8rem;
+    line-height: 35px;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+button{
+    cursor: pointer;
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FBD600;
+    color: #24303E;
+    border-radius: 20px;
+}
