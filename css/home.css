@@ -1,6 +1,6 @@
 
 *{
-    outline: 1px solid #000;
+    outline: 0px solid #000;
 }
 
 /* ---------------- */
@@ -10,8 +10,8 @@
 header{
     background-color: #4ABDF2;
     background-image: url(../img/banner.png);
-    background-position: center 100%;
-    background-size: 50%;
+    background-position: center 40px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -140,7 +140,7 @@ header{
     padding-bottom: 60px;
     background-image: url(../img/cherry.png);
     background-position: center 0;
-    background-size: 48%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
