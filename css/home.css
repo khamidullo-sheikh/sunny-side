@@ -61,7 +61,7 @@ header{
 
 .vector{
     width: 30px;
-    height: 85px;
+    height: auto;
     margin: 0 auto;
     margin-top: 50px;
 }
