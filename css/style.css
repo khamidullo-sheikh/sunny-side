@@ -17,6 +17,7 @@
     --nav-link_color: #fff;
     --content-color_green: #24554A;
     --content-color_blue: #19536C;
+    --footer-bg_color: #90D4C6;
     --feedback-text_color: #5B636D;
     --feedback-data_color: #A7AAAD;
     --footer-link_color: #458D7E;
@@ -47,6 +48,7 @@ body{
     font-weight: 600;
     line-height: 30px;
     color: var(--text_color);
+    background-color: var(--bg_color);
     overflow-x: hidden;
 }
 

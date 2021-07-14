@@ -1,7 +1,4 @@
 
-*{
-    outline: 0px solid #000;
-}
 
 /* ---------------- */
 /* ---- HEADER ---- */
@@ -161,4 +158,127 @@ header{
     font-size: 1.6rem;
     line-height: 27px;
     color: #24554A;;
+}
+
+/* ------------------ */
+/* -- TESTIMONIALS -- */
+/* ------------------ */
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 65px;
+    padding-bottom: 20px;
+}
+
+#strong{
+    font-family: var(--Fraunces);
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--feedback-data_color);
+    letter-spacing: 4px;
+    margin-bottom: 65px;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 65px;
+    color: var(--feedback-text_color);
+}
+
+.user__avatar{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.user__name{
+    font-family: var(--Fraunces);
+    font-weight: 900;
+    font-size: 1.8rem;
+    line-height: 22px;
+}
+
+.user__job{
+    font-family: var(--Barlow);
+    font-weight: 600;
+    display: block;
+    font-size: 1.4rem;
+    line-height: 25px;
+    color: var(--feedback-data_color);
+    margin-top: 10px;
+}
+
+.pictures{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.picture{
+    flex: 1 0 50%;
+    height: 188px;
+}
+
+/* ---------------- */
+/* ---- FOOTER ---- */
+/* ---------------- */
+
+footer{
+    background-color: var(--footer-bg_color);
+    padding-top: 65px;
+    padding-bottom: 80px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.footer__logo{
+    display: inline-block;
+    width: 170px;
+    height: 33px;
+    margin-bottom: 40px;
+}
+
+.footer__menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.footer__link{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 25px;
+    color: var(--footer-link_color);
+}
+
+.footer__icon{
+    display: flex;
+    align-items: center;
+}
+
+.icon__item{
+    margin-right: 30px;
+}
+
+.icon__item:last-child{
+    margin-right: 0px;
+}
+
+.fab{
+    font-size: 2.5rem;
+    color: var(--footer-link_color);
 }
