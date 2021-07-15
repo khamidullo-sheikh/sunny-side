@@ -1,5 +1,7 @@
 
-
+*{
+    outline: 1px solid #000;
+}
 /* --------------- */
 /* ---- FONTS ---- */
 /* --------------- */
@@ -69,8 +71,9 @@ h1,h2,h3{
 h1{
     font-size: 4rem;
     line-height: 49px;
-    letter-spacing: 6px;
+    letter-spacing: 7px;
     color: #fff;
+    text-transform: uppercase;
 }
 
 h2{
