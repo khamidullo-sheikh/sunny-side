@@ -69,7 +69,7 @@ header{
 
 .menu .nav__menu{
     animation-name: toggler-open;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     transform: translateX(0vw);
