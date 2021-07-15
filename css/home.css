@@ -48,6 +48,7 @@ header{
 }
 
 .nav__menu{
+    display: none;
     position: absolute;
     width: 100%;
     background-color: var(--bg_color);
@@ -63,6 +64,7 @@ header{
 }
 
 .menu-open .nav__menu{
+    display: block;
     animation-name: toggler-open;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
@@ -103,6 +105,7 @@ header{
     animation-iteration-count: 1;
     animation-timing-function: linear;
     transform: translateX(100vw);
+    display: none;
 }
 
 .menu-open .toggler-open{
