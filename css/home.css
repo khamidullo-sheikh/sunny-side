@@ -60,14 +60,9 @@ header{
     z-index: 10;
     transform: translateX(100vw);
     clip-path: polygon(0 2.7rem, 92% 2.7rem, 100% 0, 100% 100%, 0 100%);
-
-    /* animation-name: toggler-close;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; */
 }
 
-.menu .nav__menu{
+.menu-open .nav__menu{
     animation-name: toggler-open;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
@@ -84,14 +79,38 @@ header{
     margin-bottom: 32px;
 }
 
-.toggler{
+.toggler-open,
+.toggler-close{
     width: 25px;
-    height: 20px;
+    height: 25px;
     background: transparent;
     background-image: url(../icons/burger.svg);
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.toggler-close{
+    display: none;
+    width: 25px;
+    height: 25px;
+    background-image: url(../icons/burger.svg);
+}
+
+.menu-close .nav__menu{
+    animation-name: toggler-close;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    transform: translateX(100vw);
+}
+
+.menu-open .toggler-open{
+    display: none;
+}
+
+.menu-open .toggler-close{
+    display: block;
 }
 
 /* ---------------- */
