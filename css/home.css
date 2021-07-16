@@ -79,6 +79,10 @@ header{
     margin-bottom: 32px;
 }
 
+.toggle{
+    height: 25px;
+}
+
 .toggler-open,
 .toggler-close{
     width: 25px;
