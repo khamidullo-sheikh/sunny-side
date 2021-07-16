@@ -241,6 +241,14 @@ header{
     transform: translateY(10px);
 }
 
+.apelsin .wrap{
+    color: #052C3B;
+}
+
+.apelsin .wrap h3{
+    color: #052C3B;
+}
+
 .card h3{
     margin-bottom: 30px;
     color: #24554A;
