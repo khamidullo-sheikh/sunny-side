@@ -99,6 +99,7 @@ header{
     width: 25px;
     height: 25px;
     background-image: url(../icons/burger.svg);
+    opacity: .5;
 }
 
 .menu-close .nav__menu{
