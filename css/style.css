@@ -53,7 +53,7 @@ body{
 }
 
 .container{
-    max-width: calc(450px + 30px);
+    max-width: 900px;
     padding: 0 15px;
     margin: 0 auto;
 }

@@ -206,7 +206,9 @@ header{
     bottom: 0;
     left: -5px;
     z-index: -1;
+    transition: background-color .3s ease;
 }
+
 
 .block:nth-child(2) .block__link::before{
     background-color: #FFDBD4;
@@ -274,6 +276,7 @@ header{
 
 .user{
     display: flex;
+    width: 350px;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -353,6 +356,7 @@ footer{
     font-size: 1.8rem;
     line-height: 25px;
     color: var(--footer-link_color);
+    transition: color .3s ease;
 }
 
 .footer__icon{
@@ -373,4 +377,155 @@ footer{
     height: 100%;
     font-size: 2.5rem;
     color: var(--footer-link_color);
+    transition: color .3s ease;
+}
+
+/* ---------------- */
+/* - MEDIA-QUERIES -*/
+/* ---------------- */
+
+@media only screen and (min-width: 900px){
+    
+    .container{
+        max-width: 1400px;
+    }
+
+    header{
+        background-position: center bottom;
+        background-size: contain;
+    }
+
+    h1{
+        font-size: 5rem;
+        word-spacing: 5px;
+    }
+
+    h2{
+        font-size: 4rem;
+        text-align: start;
+    }
+
+    /* ---------------- */
+    /* ---- NAVBAR ---- */
+    /* ---------------- */
+
+    .navbar button{
+        display: none;
+    }
+
+    .nav__menu{
+        position: static;
+        width: auto;
+        background-color: transparent;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        z-index: 10;
+        transform: none;
+        clip-path: none;
+        margin: 0;
+    }
+
+    .nav__item{
+        margin-right: 50px;
+    }
+
+    .nav__link{
+        margin-bottom: 0;
+        color: #fff;
+        transition: color .3s ease;
+        font-size: 18px;
+    }
+
+    .nav__link:hover{
+        color: #ddd;
+    }
+
+    .btn{
+        background-color: #fff;
+        transition: background-color .3s ease, color .3s ease;
+    }
+
+    .btn:hover{
+        background-color: #77CDF5;
+        color: #fff;
+    }
+
+    /* ---------------- */
+    /* ---- BANNER ---- */
+    /* ---------------- */
+
+    .banner{
+        padding-top: 105px;
+        padding-bottom: 330px;
+    }
+
+    .vector{
+        margin-top: 95px;
+    }
+
+    /* ----------------- */
+    /* ---- CONTENT ---- */
+    /* ----------------- */
+
+    .block{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .block__text{
+        margin-left: 165px;
+        text-align: start;
+        width: 447px;
+    }
+
+    .block__img{
+        width: 718px;
+        height: 600px;
+    }
+
+    .block:nth-child(2){
+        flex-direction: row;
+    }
+
+    .block:nth-child(2) .block__text{
+        margin-left: 0;
+        margin-right: 165px;
+    }
+
+    .block__link:hover::before{
+        background-color: #FAD400;
+    }
+    
+    .block:nth-child(2) .block__link:hover::before{
+        background-color: #FE7766;
+    }
+
+    .cards{
+        flex-direction: row;
+    }
+
+    .card{
+        padding-top: 450px;
+        width: 720px;
+        height: 720px;
+    }
+
+    .users{
+        display: flex;
+        width: 1110px;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 75px;
+    }
+
+    .picture{
+        flex: 1 0 25%;
+        height: 447px;
+    }
+
+    .footer__link:hover,
+    .fab:hover{
+        color: #fff;
+    }
 }
